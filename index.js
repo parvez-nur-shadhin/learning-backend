@@ -3,6 +3,11 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT;
 
+const user = {
+    name: "Shadhin",
+    id: 261010015
+}
+
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
@@ -14,6 +19,10 @@ app.get('/twitter', (req, res) => {
 app.get('/login', (req, res) => {
     res.send('<h1>Login</h1>');
 });
+
+app.get('/user', (req, res) => {
+    res.json(user);
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

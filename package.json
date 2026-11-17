@@ -1,0 +1,21 @@
+{
+  "name": "deploy_backend",
+  "version": "1.0.0",
+  "description": "Lerning Backend",
+  "keywords": [
+    "node",
+    "learning"
+  ],
+  "license": "ISC",
+  "author": "parvez nur shadhin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0"
+  }
+}
